@@ -1,7 +1,9 @@
 import yfinance as yf
 import os 
 import pandas as pd
+
 DIRECTORY = "data/raw"
+
 def downloadData(ticker, start, end):
     data = yf.download(ticker,start=start,end=end)
     return data 
